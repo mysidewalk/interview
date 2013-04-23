@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonQuestions", "PythonQuestions\PythonQuestions.pyproj", "{672650A5-35B3-49D7-8E0B-208420515939}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpQuestions", "CSharpQuestions\CSharpQuestions.csproj", "{7185A5D7-44D9-4FFB-88B4-9FE3E05DB106}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{672650A5-35B3-49D7-8E0B-208420515939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{672650A5-35B3-49D7-8E0B-208420515939}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{672650A5-35B3-49D7-8E0B-208420515939}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{672650A5-35B3-49D7-8E0B-208420515939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{672650A5-35B3-49D7-8E0B-208420515939}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{672650A5-35B3-49D7-8E0B-208420515939}.Release|x86.ActiveCfg = Release|Any CPU
+		{7185A5D7-44D9-4FFB-88B4-9FE3E05DB106}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7185A5D7-44D9-4FFB-88B4-9FE3E05DB106}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7185A5D7-44D9-4FFB-88B4-9FE3E05DB106}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7185A5D7-44D9-4FFB-88B4-9FE3E05DB106}.Debug|x86.ActiveCfg = Debug|x86
+		{7185A5D7-44D9-4FFB-88B4-9FE3E05DB106}.Debug|x86.Build.0 = Debug|x86
+		{7185A5D7-44D9-4FFB-88B4-9FE3E05DB106}.Release|Any CPU.ActiveCfg = Release|x86
+		{7185A5D7-44D9-4FFB-88B4-9FE3E05DB106}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7185A5D7-44D9-4FFB-88B4-9FE3E05DB106}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7185A5D7-44D9-4FFB-88B4-9FE3E05DB106}.Release|x86.ActiveCfg = Release|x86
+		{7185A5D7-44D9-4FFB-88B4-9FE3E05DB106}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
