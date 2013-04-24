@@ -6,7 +6,7 @@
 function question1()
 {
 	var sum = null;
-	//build the list here
+	// define the sum function here
 	
 	return sum;
 }
@@ -22,6 +22,7 @@ function question2()
 	var test_list = ['alligator', 'bear', 'cat', 'crocodile', 'beaver', 'ape', 'bee', 'coati', 'aardvark'];
 	var grouped_list = null;
 	// group the list by first letter here
+	
    	return grouped_list;
 } 
 

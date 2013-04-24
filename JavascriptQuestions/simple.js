@@ -7,7 +7,7 @@
  
  function question1() {
 	var Foo = null;
-	//Put your class definition here
+	// Define class Foo here
 	
 	return Foo;
  }
@@ -18,12 +18,12 @@
  * from that input
  * for example 'a@b$c^d!1,2.3/4' => 'abcd1234'
  */
-function question2()
+function question2(inputString)
 {
-	var str = null;
+	var result = "";
 	// put the function here
 	
-	return str;
+	return result;
 }
 
 /*
@@ -31,13 +31,11 @@ function question2()
  * For multiples of three print "Fizz" instead of the number
  * and for multiples of five print "Buzz". For numbers which
  * are multiples of both three and five print "FizzBuzz".
- *
  */
 function question3()
 {
 	// implement function body here, no need to return a value,
-    // standard output will be captured for this problem
-    // so "document.write" statements will work fine
+    // "document.write" statements will work fine
 	
     return;
 }
