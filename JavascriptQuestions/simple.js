@@ -1,7 +1,7 @@
 /* Class definition
  * Define a class, 'Foo', with a class level attribute 'bar',
- * an instance level variable 'baz', a property 'buz' with 
- * backing store '_buz', and a method 'biz' that takes one
+ * an instance level variable 'baz',
+ * and a method 'biz' that takes one
  * argument and simply returns the value of that argument.
  */
  
