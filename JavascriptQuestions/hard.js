@@ -27,16 +27,19 @@ function question2()
 } 
 
 /*
- * Anonymous functions (closures) and callbacks
- * Create an anonymous function to calculate the cube of a number
- * Then use that function as a callback to manipulate each value in the numbers array
+ * map & reduce
+ * In text processing, letters and combinations of letters are
+ * often analyzed using numerical interpretations. Given a rule for
+ * calculating the numerical "total value" of a string, wherein each letter of the string is worth
+ * its ascii value (i.e. letter.charCodeAt(0) for each letter) and then summed, use map & reduce
+ * methodology to calculate the "total value" of each string in the array "names", sum the "total values",
+ * and then calculate the average.
  */
- 
  function question3()
  {
-	var cubes = null;
-	var numbers = [1,2,3,4,5,6,7,8,9,10];
-	// add function and callback here
-	
-	return $cubes;
+	var averageTotalValue = null;
+	var names = ["David", "Jimmy", "Matt", "Andy", "Nick", "Nathan", "Andrea", "Stephen", "Justin", "Emily", "Hannah"];
+	// apply your map and reduce strategy here
+
+	return averageTotalValue;
  }
