@@ -20,9 +20,25 @@ function question1()
 function question2()
 {
 	var test_list = ['alligator', 'bear', 'cat', 'crocodile', 'beaver', 'ape', 'bee', 'coati', 'aardvark'];
-	var grouped_list = null;
+	var grouped_list = [];
+	var groups = {};
 	// group the list by first letter here
-	
+	for ( var i = 0; i < test_list.length; i ++ )
+	{
+		var item      = test_list[ i ];
+		var firstChar = item.charAt( 0 );
+		if(groups[firstChar]!=undefined){
+			groups[ firstChar ].push( item );
+		}else{
+			groups[firstChar] = [];
+		}
+	}
+	for(var key in groups) {
+	    if(groups.hasOwnProperty(key)) {
+	        grouped_list.push(groups[key].sort());
+	    }
+	}
+	console.log(grouped_list);
    	return grouped_list;
 } 
 
@@ -39,7 +55,19 @@ function question2()
  {
 	var averageTotalValue = null;
 	var names = ["David", "Jimmy", "Matt", "Andy", "Nick", "Nathan", "Andrea", "Stephen", "Justin", "Emily", "Hannah"];
-	// apply your map and reduce strategy here
-
+	var mapCallback = function(element, index, context) {
+		var total = 0;
+		for(var i=0; i<element.length;i++){
+			total+=(element[i].charCodeAt(0) - 64)
+		}
+		return total;
+	};
+	var reduceCallback = function(previousValue, currentValue, index, context) { 
+		averageTotalValue +=currentValue;
+	};
+	//call map and reduce on the array to calculate the sum of the words
+    names.map(mapCallback).reduce(reduceCallback,0);
+    //the average is the total divided by the number of items.
+	averageTotalValue = (averageTotalValue/names.length);
 	return averageTotalValue;
  }
