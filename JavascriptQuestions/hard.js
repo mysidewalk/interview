@@ -16,6 +16,7 @@ function question1()
  * into new lists by the first letter of each item in the list.
  * Your final solution should return a list of lists whose members
  * all have the same first letter.
+ * (Feel free to use underscore or another preferred library for this kind of processing)
  */
 function question2()
 {
@@ -34,6 +35,7 @@ function question2()
  * its ascii value (i.e. letter.charCodeAt(0) for each letter) and then summed, use map & reduce
  * methodology to calculate the "total value" of each string in the array "names", sum the "total values",
  * and then calculate the average.
+ * (Feel free to use underscore or another preferred library for this kind of processing)
  */
  function question3()
  {
