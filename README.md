@@ -15,4 +15,4 @@ Please do not fork, post a pull request, or in any other way publicly expose you
 
 Any vagueness in the questions or difficulty that you encounter reproducing the source locally
 and getting it to run is likely an intentional part of the evaluation, as such, while feedback is
-always appreciated, no assistance will be rendered to candidates experiencing difficulty.
+always appreciated, candidates experiencing difficulty should not expect assistance.
