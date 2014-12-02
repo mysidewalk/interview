@@ -1,9 +1,51 @@
+/* Class definition
+ * Define a class, 'Foo', with a class level attribute 'bar',
+ * an instance level variable 'baz',
+ * and a method 'biz' that takes one
+ * argument and simply returns the value of that argument.
+ */
+ 
+ function question1() {
+	var Foo = null;
+	// Define class Foo here
+	
+	return Foo;
+ }
+ 
+ /* Regex and String sanitization
+ * write a function that takes a single input and uses
+ * replace to remove all non-alphanumeric characters 
+ * from that input
+ * for example 'a@b$c^d!1,2.3/4' => 'abcd1234'
+ */
+function question2(inputString)
+{
+	var result = "";
+	// put the function here
+	
+	return result;
+}
+
+/*
+ * Define a function that prints the numbers from 1 to 100. 
+ * For multiples of three print "Fizz" instead of the number
+ * and for multiples of five print "Buzz". For numbers which
+ * are multiples of both three and five print "FizzBuzz".
+ */
+function question3()
+{
+	// implement function body here, no need to return a value,
+    // "document.write" statements will work fine
+	
+    return;
+}
+
 /* 
  * Argument handling
  * Write a function that takes an arbirary number of numeric arguments
  * and return the sum of those arguments
  */
-function question1()
+function question4()
 {
 	var sum = null;
 	// define the sum function here
@@ -18,7 +60,7 @@ function question1()
  * all have the same first letter.
  * (Feel free to use underscore or another preferred library for this kind of processing)
  */
-function question2()
+function question5()
 {
 	var test_list = ['alligator', 'bear', 'cat', 'crocodile', 'beaver', 'ape', 'bee', 'coati', 'aardvark'];
 	var grouped_list = null;
@@ -37,7 +79,7 @@ function question2()
  * and then calculate the average.
  * (Feel free to use underscore or another preferred library for this kind of processing)
  */
- function question3()
+ function question6()
  {
 	var averageTotalValue = null;
 	var names = ["David", "Jimmy", "Matt", "Andy", "Nick", "Nathan", "Andrea", "Stephen", "Justin", "Emily", "Hannah"];
