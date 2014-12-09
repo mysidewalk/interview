@@ -11,8 +11,9 @@ Download or clone the repository locally, complete as many questions as you are 
 directories containing your answers, and email your submission to matt at mindmixer dot com and
 joel at mindmixer dot com.
 
-Please do not fork, post a pull request, or in any other way publicly expose your answers.
+Please do not fork, post a pull request, or in any other way publicly expose your answers. This is
+further covered in the license included with this repository.
 
 Any vagueness in the questions or difficulty that you encounter reproducing the source locally
-and getting it to run is likely an intentional part of the evaluation, as such, while feedback is
+and getting it to run is a useful and intentional part of the evaluation, as such, while feedback is
 always appreciated, candidates experiencing difficulty should not expect assistance.
