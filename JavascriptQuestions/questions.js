@@ -1,5 +1,4 @@
 /* Problem #1
- * Prototypical Objects and Inheritance
  *
  * Given the prototype, Shape, that has 2 methods and 3 properties, create two additional
  * prototypes, Rectangle and Circle, that inherit from Shape. Each should not modify the inherited
@@ -21,13 +20,12 @@ Shape.prototype.getType = function() { return 'This is a ' + this.type; };
 
 
 /* Problem #2
- * RegEx and String Sanitation
  * 
  * With a given Array of strings, 'ocdids', that follow the format detailed below, create a new
  * Array, 'ocdidsResult', containing objects with keys and values matching each segment of the
  * string. A segment is separated by the '/' (forward slash) character. You should also generate a
  * unique number to assign to the 'ocd-division' key. The keys and values should not include ':'
- * (colons), or '/' (forward slashs).
+ * (colons), or '/' (forward slashes).
  * Format Example: 'ocd-division/[key]:[value]/[key]:[value]/[key]:[value]'
  */
 var ocdids = [
@@ -45,44 +43,47 @@ var ocdidsResult = [];
 
 
 /* Problem #3
- * For multiples of three print "Fizz" instead of the number
- * and for multiples of five print "Buzz". For numbers which
- * are multiples of both three and five print "FizzBuzz".
+ *
+ * Define a function, 'countTo', that accepts one argument, 'limit', that will be a Number. The
+ * function should print the numbers from 1 to the passed in 'limit'. For multiples of three print
+ * 'Fizz' instead of the number and for multiples of five print 'Buzz'. For numbers which are
+ * multiples of both three and five print 'FizzBuzz'.
+ * (Use 'document.write' to print the results.)
  */
-var question3 = function() {
-    // implement function body here, no need to return a value,
-    // "document.write" statements will work fine
-};
+var countTo;
 
-/* Argument Handling
- * Write a function that takes an arbitrary number of numeric arguments
- * and returns the sum of those arguments.
+// Write your solution to Problem #3 below this
+
+
+
+/* Problem #4
+ *
+ * Define a function, 'getTotal', that takes an arbitrary number of numeric arguments and returns
+ * the sum of those arguments.
  */
-var question4 = function() {
-    var sum = null;
-    // Define the sum function here
-    
-    return sum;
-};
+var getTotal;
 
-/* Using the predefined list, "testList", group the list
- * into new lists by the first letter of each item in the list.
- * Your final solution should return a list of lists whose members
- * all have the same first letter.
+// Write your solution to Problem #4 below this
+
+
+
+/* Problem #5
+ *
+ * Define a function, 'sortCreatures', that groups the predefined Array, 'creatures', into new
+ * Arrays by the first letter of each item in the Array. Your final solution should return an Array
+ * of Arrays whose members all have the same first letter.
  * (Feel free to use underscore or another preferred library for this kind of processing)
  */
-var question5 = function() {
-    var testList = ['alligator', 'bear', 'cat', 'crocodile', 'beaver', 'ape', 'bee',
-        'coati', 'aardvark'];
-    var groupedList = null;
-    // Group the list by first letter here
-    
-    return groupedList;
-};
+var sortCreatures;
+
+var creatures = ['alligator', 'bear', 'cat', 'crocodile', 'beaver', 'ape', 'bee', 'coati',
+    'aardvark'];
+
+// Write your solution to Problem #5 below this
+
 
 
 /* Problem #6
- * Map & Reduce
  * 
  * Given two Arrays of objects, that have at least one overlapping property, reduce them so that
  * a third Array, 'organizationsResult', includes the list of all organizations, and for every
