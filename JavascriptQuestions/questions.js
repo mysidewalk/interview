@@ -1,29 +1,50 @@
-/* Class Definition
- * Define a class, 'Foo',
- * with a class level attribute 'bar',
- * an instance level variable 'baz',
- * and a method 'biz' that takes one argument and simply returns the value of that argument.
+/* Problem #1
+ * Prototypical Objects and Inheritance
+ *
+ * Given the prototype, Shape, that has 2 methods and 3 properties, create two additional
+ * prototypes, Rectangle and Circle, that inherit from Shape. Each should not modify the inherited
+ * properties, but override the getArea() method to make sure it returns the correct area.
+ * Additionally, for the Circle prototype override the getType() method to return
+ * 'I am a circle!' instead of the normal value, which the Rectangle should still return.
  */
-var question1 = function() {
-    var Foo = null;
-    // Define class Foo here
-    
-    return Foo;
-};
- 
-/* RegEx and String Sanitation
- * Write a function that takes a single string input and uses
- * replace to remove all non-alphanumeric characters from that input
- * for example 'a@b$c^d!1,2.3/4' => 'abcd1234'
- */
-var question2 = function(inputString) {
-    var result = '';
-    // Put the function here
-    
-    return result;
+var Shape = function(width, height) {
+    this.width = width;
+    this.height = height;
+    this.type = 'Fill this in';
 };
 
-/* Define a function that prints the numbers from 1 to 100. 
+Shape.prototype.getArea = function() { return 0; };
+Shape.prototype.getType = function() { return 'This is a ' + this.type; };
+
+// Write your solution to Problem #1 below this
+
+
+
+/* Problem #2
+ * RegEx and String Sanitation
+ * 
+ * With a given Array of strings, 'ocdids', that follow the format detailed below, create a new
+ * Array, 'ocdidsResult', containing objects with keys and values matching each segment of the
+ * string. A segment is separated by the '/' (forward slash) character. You should also generate a
+ * unique number to assign to the 'ocd-division' key. The keys and values should not include ':'
+ * (colons), or '/' (forward slashs).
+ * Format Example: 'ocd-division/[key]:[value]/[key]:[value]/[key]:[value]'
+ */
+var ocdids = [
+    'ocd-division/country:us/state:mo/county:andrew/council_district:west',
+    'ocd-division/country:us/state:mo/county:boone/council_district:2',
+    'ocd-division/country:us/state:mo/county:dallas/council_district:north',
+    'ocd-division/country:us/state:mo/place:kansas_city/council_district:1',
+    'ocd-division/country:us/state:mo/place:st_louis/ward:28',
+];
+
+var ocdidsResult = [];
+
+// Write your solution to Problem #2 below this
+
+
+
+/* Problem #3
  * For multiples of three print "Fizz" instead of the number
  * and for multiples of five print "Buzz". For numbers which
  * are multiples of both three and five print "FizzBuzz".
@@ -59,20 +80,29 @@ var question5 = function() {
     return groupedList;
 };
 
-/* Map & Reduce
- * In text processing, letters and combinations of letters are
- * often analyzed using numerical interpretations. Given a rule for
- * calculating the numerical "total value" of a string, wherein each letter of the string is worth
- * its ASCii value (i.e. letter.charCodeAt(0) for each letter) and then summed, use map & reduce
- * methodology to calculate the "total value" of each string in the array "names", sum the
- * "total values", and then calculate the average.
+
+/* Problem #6
+ * Map & Reduce
+ * 
+ * Given two Arrays of objects, that have at least one overlapping property, reduce them so that
+ * a third Array, 'organizationsResult', includes the list of all organizations, and for every
+ * organization that is included in the 'selectedOrganizations' Array, set the 'selected' property
+ * of that organization to true.
  * (Feel free to use underscore or another preferred library for this kind of processing)
  */
-var question6 = function() {
-    var averageTotalValue = null;
-    var names = ['David', 'Jimmy', 'Matt', 'Andy', 'Nick', 'Nathan', 'Andrea', 'Stephen',
-        'Justin', 'Emily', 'Hannah'];
-    // Apply your map and reduce strategy here
+var organizations = [
+    {id: 1, name: 'Bob\'s Mowers', selected: false},
+    {id: 2, name: 'John\'s Bike Barn', selected: false},
+    {id: 3, name: 'Josh\'s Lemonade', selected: false},
+    {id: 4, name: 'Kevin\'s Disc Bar', selected: false},
+    {id: 5, name: 'Thomas\'s Guitars', selected: false},
+];
 
-    return averageTotalValue;
-};
+var selectedOrganizations = [
+    {id: 10, organization: {id: 2, name: 'John\'s Bike Barn'}},
+    {id: 11, organization: {id: 4, name: 'Kevin\'s Disc Bar'}},
+];
+
+var organizationsResult = [];
+
+// Write your solution to Problem #6 below this
