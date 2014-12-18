@@ -1,20 +1,9 @@
 /* Problem #1
  *
- * Given the prototype, Shape, that has 2 methods and 3 properties, create two additional
- * prototypes, Rectangle and Circle, that inherit from Shape. Each should not modify the inherited
- * properties, but override the getArea() method to make sure it returns the correct area.
- * Additionally, for the Circle prototype override the getType() method to return
- * 'I am a circle!' instead of the normal value, which the Rectangle should still return.
- * (For the Circle, use the 'width' or 'height' property to represent the diameter)
+ * Define a function, 'getTotal', that takes an arbitrary number of numeric arguments and returns
+ * the sum of those arguments.
  */
-var Shape = function(width, height) {
-    this.width = width;
-    this.height = height;
-    this.type = 'Fill this in';
-};
-
-Shape.prototype.getArea = function() { return 0; };
-Shape.prototype.getType = function() { return 'This is a ' + this.type; };
+var getTotal;
 
 // Write your solution to Problem #1 below this
 
@@ -22,18 +11,15 @@ Shape.prototype.getType = function() { return 'This is a ' + this.type; };
 
 /* Problem #2
  *
- * With a given Object, 'snakeKeys', transform the object's keys from 'snake_case' into 'camelCase'.
- * The result, 'camelCaseResult', should be an Object with only camel case keys, whose values have
- * not been modified.
+ * Define a function, 'sortCreatures', that groups the predefined Array, 'creatures', into new
+ * Arrays by the first letter of each item in the Array. Your final solution should return an Array
+ * of Arrays whose members all have the same first letter.
+ * (Feel free to use underscore or another preferred library for this kind of processing)
  */
-var snakeKeys = {
-    'image_types': ['jpg', 'jpeg', 'png', 'gif'],
-    'requires_description': false,
-    'the_number_one': 1,
-    'the_string_image': 'image',
-};
+var sortCreatures;
 
-var camelCaseResult = {};
+var creatures = ['alligator', 'bear', 'cat', 'crocodile', 'beaver', 'ape', 'bee', 'coati',
+    'aardvark'];
 
 // Write your solution to Problem #2 below this
 
@@ -54,33 +40,6 @@ var countTo;
 
 
 /* Problem #4
- *
- * Define a function, 'getTotal', that takes an arbitrary number of numeric arguments and returns
- * the sum of those arguments.
- */
-var getTotal;
-
-// Write your solution to Problem #4 below this
-
-
-
-/* Problem #5
- *
- * Define a function, 'sortCreatures', that groups the predefined Array, 'creatures', into new
- * Arrays by the first letter of each item in the Array. Your final solution should return an Array
- * of Arrays whose members all have the same first letter.
- * (Feel free to use underscore or another preferred library for this kind of processing)
- */
-var sortCreatures;
-
-var creatures = ['alligator', 'bear', 'cat', 'crocodile', 'beaver', 'ape', 'bee', 'coati',
-    'aardvark'];
-
-// Write your solution to Problem #5 below this
-
-
-
-/* Problem #6
  * 
  * Given two Arrays of objects, that have at least one overlapping property, reduce them so that
  * a third Array, 'organizationsResult', includes the list of all organizations, and for every
@@ -102,6 +61,47 @@ var selectedOrganizations = [
 ];
 
 var organizationsResult = [];
+
+// Write your solution to Problem #4 below this
+
+
+
+/* Problem #5
+ *
+ * Given the prototype, Shape, that has 2 methods and 3 properties, create two additional
+ * prototypes, Rectangle and Circle, that inherit from Shape. Each should not modify the inherited
+ * properties, but override the getArea() method to make sure it returns the correct area.
+ * Additionally, for the Circle prototype override the getType() method to return
+ * 'I am a circle!' instead of the normal value, which the Rectangle should still return.
+ * (For the Circle, use the 'width' or 'height' property to represent the diameter)
+ */
+var Shape = function(width, height) {
+    this.width = width;
+    this.height = height;
+    this.type = 'Fill this in';
+};
+
+Shape.prototype.getArea = function() { return 0; };
+Shape.prototype.getType = function() { return 'This is a ' + this.type; };
+
+// Write your solution to Problem #5 below this
+
+
+
+/* Problem #6
+ *
+ * With a given Object, 'snakeKeys', transform the object's keys from 'snake_case' into 'camelCase'.
+ * The result, 'camelCaseResult', should be an Object with only camel case keys, whose values have
+ * not been modified.
+ */
+var snakeKeys = {
+    'image_types': ['jpg', 'jpeg', 'png', 'gif'],
+    'requires_description': false,
+    'the_number_one': 1,
+    'the_string_image': 'image',
+};
+
+var camelCaseResult = {};
 
 // Write your solution to Problem #6 below this
 
