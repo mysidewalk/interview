@@ -5,6 +5,7 @@
  * properties, but override the getArea() method to make sure it returns the correct area.
  * Additionally, for the Circle prototype override the getType() method to return
  * 'I am a circle!' instead of the normal value, which the Rectangle should still return.
+ * (For the Circle, use the 'width' or 'height' property to represent the diameter)
  */
 var Shape = function(width, height) {
     this.width = width;
@@ -20,23 +21,19 @@ Shape.prototype.getType = function() { return 'This is a ' + this.type; };
 
 
 /* Problem #2
- * 
- * With a given Array of strings, 'ocdids', that follow the format detailed below, create a new
- * Array, 'ocdidsResult', containing objects with keys and values matching each segment of the
- * string. A segment is separated by the '/' (forward slash) character. You should also generate a
- * unique number to assign to the 'ocd-division' key. The keys and values should not include ':'
- * (colons), or '/' (forward slashes).
- * Format Example: 'ocd-division/[key]:[value]/[key]:[value]/[key]:[value]'
+ *
+ * With a given Object, 'snakeKeys', transform the object's keys from 'snake_case' into 'camelCase'.
+ * The result, 'camelCaseResult', should be an Object with only camel case keys, whose values have
+ * not been modified.
  */
-var ocdids = [
-    'ocd-division/country:us/state:mo/county:andrew/council_district:west',
-    'ocd-division/country:us/state:mo/county:boone/council_district:2',
-    'ocd-division/country:us/state:mo/county:dallas/council_district:north',
-    'ocd-division/country:us/state:mo/place:kansas_city/council_district:1',
-    'ocd-division/country:us/state:mo/place:st_louis/ward:28',
-];
+var snakeKeys = {
+    'image_types': ['jpg', 'jpeg', 'png', 'gif'],
+    'requires_description': false,
+    'the_number_one': 1,
+    'the_string_image': 'image',
+};
 
-var ocdidsResult = [];
+var camelCaseResult = {};
 
 // Write your solution to Problem #2 below this
 
@@ -45,7 +42,7 @@ var ocdidsResult = [];
 /* Problem #3
  *
  * Define a function, 'countTo', that accepts one argument, 'limit', that will be a Number. The
- * function should print the numbers from 1 to the passed in 'limit'. For multiples of three print
+ * function should print the numbers from 1 to 'limit'. For multiples of three print
  * 'Fizz' instead of the number and for multiples of five print 'Buzz'. For numbers which are
  * multiples of both three and five print 'FizzBuzz'.
  * (Use 'document.write' to print the results.)
@@ -107,3 +104,5 @@ var selectedOrganizations = [
 var organizationsResult = [];
 
 // Write your solution to Problem #6 below this
+
+
