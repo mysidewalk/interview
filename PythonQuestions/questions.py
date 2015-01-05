@@ -56,13 +56,14 @@ def question_4():
 def question_5():
     """ Redefine the inheritance of classes W, X, and Y such that class Z has a method resolution
         order of:
-        Z, W, X, Y, D, B, C, E, object
+        Z, W, X, C, D, B, A, Y, E, object
     """
-    class A(object): pass
-    class B(object): pass
-    class C(object): pass
-    class D(object): pass
-    class E(object): pass
+    O = object
+    class A(O): pass
+    class B(O): pass
+    class D(B): pass
+    class C(D, A): pass
+    class E(O): pass
     # Define correct inheritance of W, X, and Y here
     class W(): pass
     class X(): pass
