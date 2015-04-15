@@ -1,5 +1,5 @@
 Sort,Variable Name,Variable Description,Variable Type,Variable Width,Decimal Places
-1,ID,ID,Text,5,0
+1,ID,ID (Zip5),Text,5,0
 2,NAME,Name,Text,80,0
 3,ST_ABBREV,State Abbreviation,Text,2,0
 4,TOTPOP_CY,2014 Total Population,Integer,9,0
