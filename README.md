@@ -9,8 +9,8 @@ There is also one html/css question comprised of a design to be implemented and 
 visualization problem comprised of a set of data to be visualized.
 
 Download or clone the repository locally, complete as many questions as you are able, compress the
-directories containing your answers, and email your submission to **matt at mindmixer dot com and
-joel at mindmixer dot com**.
+directories containing your answers, and email your submission to **matt at mysidewalk dot com and
+joel at mysidewalk dot com**.
 
 Please do not fork, post a pull request, or in any other way publicly expose your answers. This is
 further covered in the license included with this repository.
