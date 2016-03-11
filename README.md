@@ -24,9 +24,9 @@
 * Assume any text or strings mentioned may contain unicode characters.
 
 ## Integrity Guidelines
-* Software development at mySidewalk is a collaborative endeavor and engineers here often survey other examples to come up with the best solution. That said: if you derive any part of your solution from another author’s submission or receive help from another individual working through your solution, you need to:
-  * Disclose this with appropriate inline comments and documentation
-  * Improve significantly upon the work you derived from or the approach a colleague helped you with
+Software development at mySidewalk is a collaborative endeavor and engineers here often survey other examples to come up with the best solution. That said: if you derive any part of your solution from another author’s submission or receive help from another individual working through your solution, you need to:
+* Disclose this with appropriate inline comments and documentation
+* Improve significantly upon the work you derived from or the approach a colleague helped you with
 
 ## Problems:
 * The user has a file that is made up of short (less than 1000 character) strings, each on a different line (assume any common character or character combination that means a newline to someone might be used interchangeably in this file). Most of these strings will be preceded by numbers, i.e. “2 Steaks”, “10 Chicken Wings”, “343GuiltySparks”. Accept the file from the user and return them a file with the same items sorted first by the numeric value of any leading number (2 < 10 < 343) and then alphabetically for the rest of the string.
