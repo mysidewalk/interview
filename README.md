@@ -4,7 +4,7 @@
 The user has a file that is made up of short (less than 1000 character) strings, each on a different line (assume any common character or character combination that means a newline to someone might be used interchangeably in this file). Most of these strings will be preceded by numbers, i.e. “2 Steaks”, “10 Chicken Wings”, “343GuiltySparks”. Accept the file from the user and return them a file with the same items sorted first by the numeric value of any leading number (2 < 10 < 343) and then alphabetically for the rest of the string.
 
 ## Solution1:
-I have written the program in Python. I have included the pytest. you can run the program using the Dockerfile.
+I have written the program in Python. I have included the pytest. The program can be executed using the Dockerfile.
 
 Files:
 * Solution2/sorting.py : Is the python script
@@ -14,7 +14,7 @@ Files:
 * Solution2/Dockerfile : Execute using the Dockerfile with the following commands.
 
 Steps to run the program:
-  * Make changes input.txt, that will be the input file to the program.
+* Make changes input.txt, that will be the input file to the program.
 * docker build -t sorting .
 * docker run -it --name sorting-app sorting
   * Enter "input.txt"
@@ -38,7 +38,7 @@ Link: https://rawgit.com/malathykrish/interview/master/Solution3/KansasCommutePo
 If you can't open the above link:
 * Copy the link location of the HTML file
 * Open a new browser and paste it
-* replace github.com to rawgit.com and remove the word "blob" from the URL
+* Replace github.com to rawgit.com and remove the word "blob" from the URL
 * Example :
   * https://github.com/<your user name>/<your repo>/blob/master/page.html
   * https://rawgit.com/<your user name>/<your repo>/master/page.html
@@ -55,3 +55,8 @@ Details in Page:
 There are few more TODO items for this problem:
 * Should be able to drag/move the info window
 * Compare between different regions.
+
+Program Logic:
+* Other than just plotting the data, did some analysis over the entire data and tried to present the details in the minimum space with color codes.
+* The percentile helps in analyzing which region has the highest,medium and lowest modes of commute.
+  * For example, a region which has public transit as green color code, shows that, that region is one among the top 66th percentile where people use public transit.
