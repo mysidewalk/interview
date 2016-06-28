@@ -1,11 +1,10 @@
 # mySidewalk Inc Coding Assessment
 
-## Submission Guidelines:
-* Of the following problems, choose the 2 that best align with your skillset and desired role at mySidewalk.
-* Prepare programs (code, tests, and resources that will run on their own under the circumstances described in the problem and fulfill the informal requirements of the problem statement) for these 2 problems in a fork of this repo.
-* Submit a link to your fork in an email to careers@mysidewalk.com, subject line: “Code Submission”.
+## Solution1:
+Question:The user has a file that is made up of short (less than 1000 character) strings, each on a different line (assume any common character or character combination that means a newline to someone might be used interchangeably in this file). Most of these strings will be preceded by numbers, i.e. “2 Steaks”, “10 Chicken Wings”, “343GuiltySparks”. Accept the file from the user and return them a file with the same items sorted first by the numeric value of any leading number (2 < 10 < 343) and then alphabetically for the rest of the string.
 
-## Assessment Guidelines:
+
+## Solution 2:
 * Only 2 submissions will be scored, completing additional problems is not encouraged for the purposes of this assessment.
 * Submissions will be scored by members of our development team who will be unaware of the author’s identity, resume, or background; they will have access to no information or documentation besides that included in the forked repo.
 * Each submission will be scored on 4 criteria of equal weight:

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Google Map Commute Population</title>
+    <!-- jQuery library and Bootstrap Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+
+        #legend {
+            background: gray;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function initMap() {
+            //Initializing the map
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                //TODO:Eliminate static values and obtain from the json file dynamically.
+                center: {
+                    lng: -94.5895258347256,
+                    lat: 39.1830964815764
+                }
+            });
+
+            //Adding custom legend to the Map
+            map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('legend'));
+            var legend = document.getElementById('legend');
+            //TODO:Need to make it dynamic with colors and percentile value form config file
+            legend.innerHTML = 'Legend<table class="table table-bordered table-hover">' +
+                '<thead class="thead-default"><tr><th>Color</th><th>Percentile</th></thead>' +
+                '<tr><td bgcolor="#00cc00">Green</td><td>>66</td></tr>' +
+                '<tr><td bgcolor="#ff9933">Orange</td><td>>33 & <66</td>' +
+                '<tr><td bgcolor="#ff0000">Red</td><td><33</td>' +
+                '</table>';
+
+            //Execute the functions for 2 different json datasets
+            find_percentile('https://raw.githubusercontent.com/mysidewalk/interview/master/assets/kc-neighborhoods.jsonhttps://raw.githubusercontent.com/mysidewalk/interview/master/assets/kc-tracts.json', coords_plotting);
+            find_percentile('https://raw.githubusercontent.com/mysidewalk/interview/master/assets/kc-tracts.json', coords_plotting);
+
+            /*
+             *find_percentile : This function finds the 66th and 33rd percentile
+             *to give the color coding for the data
+             *After the percentile values are calculated, the coordinates area
+             * plotted using a function which is a callback
+             */
+            function find_percentile(jsonFile, callback) {
+                var drive_carpool = []
+                var walk = []
+                var public_transit = []
+                var drive_alone = []
+                var count = 0
+
+                $.getJSON(jsonFile, function(data) {
+                    $.each(data.features, function(i, f) {
+                        count++;
+                        drive_carpool.push(f.properties["pop-commute-drive_carpool"]);
+                        walk.push(f.properties["pop-commute-walk"]);
+                        public_transit.push(f.properties["pop-commute-public_transit"]);
+                        drive_alone.push(f.properties["pop-commute-drive_alone"]);
+                    });
+                    drive_alone.sort();
+                    walk.sort();
+                    public_transit.sort();
+                    drive_carpool.sort();
+                    //66th percentile index
+                    indexHigh = Math.round((66 / 100) * count);
+                    //33rd percentile index
+                    indexMedium = Math.round((33 / 100) * count);
+                    //Input the plotting has the value for High and Medium percentile of
+                    //each mode of transport.
+                    callback({
+                        "count": count,
+                        "walkHigh": walk[indexHigh],
+                        "walkMedium": walk[indexMedium],
+                        "driveCarpoolHigh": drive_carpool[indexHigh],
+                        "driveCarpoolMedium": drive_carpool[indexMedium],
+                        "driveAloneHigh": drive_alone[indexHigh],
+                        "driveAloneMedium": drive_alone[indexMedium],
+                        "publicTransitHigh": public_transit[indexHigh],
+                        "publicTransitMedium": public_transit[indexMedium]
+                    }, jsonFile);
+                });
+
+            }
+
+            /*
+            * This function plots the coordinates from the geojson file, populates the
+            markers and the content window with the table of values.
+            */
+            function coords_plotting(result, jsonFile) {
+                var coordinates = ""
+                $.getJSON(jsonFile, function(data) {
+                    $.each(data.features, function(i, f) {
+                        var content = f.properties
+                        $.each(f.geometry.coordinates, function(j, g) {
+                            var coords = [];
+                            $.each(g, function(k, h) {
+
+                                point = {
+                                    lng: +h[0],
+                                    lat: h[1]
+                                };
+                                coords.push(point);
+                            });
+                            draw_borders(coords)
+                            markerPoint = calculateCenterPoint(coords)
+                            content_window(content, markerPoint, result)
+                        });
+                    });
+
+                }); //
+            }
+
+            //This function caculated the center points for a given set of coordinates
+            function calculateCenterPoint(coords) {
+                var bound = new google.maps.LatLngBounds();
+                for (i = 0; i < coords.length; i++)
+                    bound.extend(new google.maps.LatLng(coords[i]))
+
+                return bound.getCenter()
+            }
+            //This function draws the border for the given set of coordinates
+            function draw_borders(coords, markerPoint) {
+                var border = new google.maps.Polygon({
+                    paths: coords,
+                    strokeColor: '#FF0000',
+                    strokeOpacity: 0.8,
+                    strokeWeight: 3,
+                    fillColor: '#FF0000',
+                    fillOpacity: 0.35
+                });
+                border.setMap(map);
+            }
+
+            //This function populated the content window and the marker.
+            function content_window(content, markerPoint, result) {
+
+                drive_alone_bgColor = find_color(content["pop-commute-drive_alone]"], result.driveAloneHigh, result.driveAloneMedium);
+                drive_carpool_bgColor = find_color(content["pop-commute-drive_carpool"], result.driveCarpoolHigh, result.driveCarpoolMedium);
+                public_transit_bgColor = find_color(content["pop-commute-public_transit"], result.publicTransitHigh, result.publicTransitMedium);
+                walk_bgColor = find_color(content["pop-commute-walk"], result.walkHigh, result.walkMedium)
+
+                var contentString = '<div id="content"> ' +
+                    '<div id="siteNotice">Area Code: ' + content.area + '</div>' +
+                    '<div id="bodyContent">' +
+                    '  <table class="table table-bordered table-hover">' +
+                    '  <thead class="thead-default"><tr><th>drive_alone</th><th>drive_carpool</th><th>public_transit</th><th>walk</th></tr></thead>' +
+                    '<tr><td bgcolor=' + drive_alone_bgColor + '>' + (content["pop-commute-drive_alone"]).toFixed(2) + '</td>' +
+                    '<td bgcolor=' + drive_carpool_bgColor + '>' + (content["pop-commute-drive_carpool"]).toFixed(2) + '</td>' +
+                    '<td bgcolor=' + public_transit_bgColor + '>' + (content["pop-commute-public_transit"]).toFixed(2) + '</td>' +
+                    '<td bgcolor=' + walk_bgColor + '>' + (content["pop-commute-walk"]).toFixed(2) + '</td></tr>' +
+                    '</table> </div> ' +
+                    '<p>' + content.shid + '</p>' +
+                    '</div>';
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+
+                var marker = new google.maps.Marker({
+                    position: markerPoint,
+                    map: map,
+                    title: 'Transport'
+                });
+                marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                });
+            }
+
+        }
+
+        /*This function finds the background color for each data depending
+         * on the percentile value which is calculated.
+         * If the value is greater then 66th percentile, the color is green.
+         * If the value is greater then 33rd amd less then 66th percentile, the color is Orange.
+         * If the value is lesser then 33rd percentile, the color is Red.
+         */
+        function find_color(value, valueHigh, valueMedium) {
+            bgColor = "#ff0000"; //Red
+            if (value >= valueHigh)
+                bgColor = "#00cc00"; //Green
+            else if (value >= valueMedium)
+                bgColor = "#ff9933"; //Orange
+            return bgColor
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
+
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="legend">
+
+    </div>
+
+</body>
+
+</html>
