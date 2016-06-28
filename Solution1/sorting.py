@@ -1,4 +1,4 @@
-#vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4 
+#vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
 #!/usr/bin/python
 from collections import defaultdict
 import sys
@@ -32,7 +32,7 @@ def process_text(text):
 	    #If the line contains only alphabets
 	    else:
 		dic[''].append(str[index:len(str)])
-	# If the line has numbers
+	# If the line has only numbers
 	else:
 	    c = re.search("\d", str)
 	    if c:
