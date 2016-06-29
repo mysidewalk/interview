@@ -51,7 +51,7 @@
                 '</table>';
 
             //Execute the functions for 2 different json datasets
-            find_percentile('https://raw.githubusercontent.com/mysidewalk/interview/master/assets/kc-neighborhoods.jsonhttps://raw.githubusercontent.com/mysidewalk/interview/master/assets/kc-tracts.json', coords_plotting);
+            find_percentile('https://raw.githubusercontent.com/mysidewalk/interview/master/assets/kc-neighborhoods.json', coords_plotting);
             find_percentile('https://raw.githubusercontent.com/mysidewalk/interview/master/assets/kc-tracts.json', coords_plotting);
 
             /*
@@ -137,7 +137,7 @@
                 return bound.getCenter()
             }
             //This function draws the border for the given set of coordinates
-            function draw_borders(coords, markerPoint) {
+            function draw_borders(coords) {
                 var border = new google.maps.Polygon({
                     paths: coords,
                     strokeColor: '#FF0000',
