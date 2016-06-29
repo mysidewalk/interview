@@ -1,4 +1,4 @@
-#vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
+#vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4 
 #!/usr/bin/python
 from collections import defaultdict
 import sys
@@ -32,7 +32,7 @@ def process_text(text):
 	    #If the line contains only alphabets
 	    else:
 		dic[''].append(str[index:len(str)])
-	# If the line has only numbers
+	# If the line has numbers
 	else:
 	    c = re.search("\d", str)
 	    if c:
@@ -43,7 +43,8 @@ def write_file(dic):
 #Writing the contents to a file
     file_op = open('output.txt', 'w')
     for k in sorted(dic.keys()):
-        value = sorted(dic[k])
+        #case insensitive sorting for the values which are just strings
+	value = sorted(dic[k], key=lambda s: s.lower())
         for v in value:
     	    print "%s%s" %(k,v)
 	    file_op.write("%s%s" %(k,v))

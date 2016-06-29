@@ -47,6 +47,12 @@ def test_process_text():
     assert op == "5\n30Orders\n.%$\nFew Items\nSnack2\nsnack2\n"
     file_op.close()
     
-
+    contents = "Few Items\n 30Orders\n Snack2\n fish\n 5\n.%$\n"
+    dic = process_text(contents)
+    write_file(dic)
+    file_op = open(op_filename, 'r')
+    op = file_op.read()
+    assert op == "5\n30Orders\n.%$\nFew Items\nfish\nSnack2\n"
+    file_op.close()
 
 
