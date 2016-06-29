@@ -55,6 +55,7 @@ Details in Page:
 There are few more TODO items for this problem:
 * Should be able to drag/move the info window
 * Compare between different regions.
+* Should be able to close all info window
 
 Program Logic:
 * Other than just plotting the data, did some analysis over the entire data and tried to present the details in the minimum space with color codes.
