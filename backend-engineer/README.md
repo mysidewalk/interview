@@ -1,7 +1,8 @@
 # Backend or Full-Stack Engineer
 
 ## Prompt
-The user will provide files that are made up of short (less than 1000 character) strings, each on a different line (assume any common character or character combination that means a newline to someone might be used interchangeably in this file). Some of these strings will be preceded by numbers, i.e. “2 Steaks”, “10 Chicken Wings”, “343GuiltySparks”. Accept the file from the user and return them a file with the same items sorted first by the numeric value of any leading number (2 < 10 < 343) and then alphabetically for the rest of the string.
+You will use the [provided text file](example-list.txt) for this submission. It contains short strings on separate lines. Many of these strings have a number prefix, i.e. “2 Steaks”, “10 Chicken Wings”, “343GuiltySparks”. Prepare a program that accepts a file or path and creates or returns a file with the same short strings sorted. 
+Sort first by the numeric value of any leading number (2 < 10 < 343) and then alphabetically for the rest of the string.
 
 ## Assessment Guidelines:
 * We will score 1 submission. Completing extra problems is not encouraged for the purposes of this assessment.
@@ -23,4 +24,4 @@ The user will provide files that are made up of short (less than 1000 character)
   * flat files
   * sqlite (or another self contained/embedded database) 
   * a completely scripted setup (docker recommended)
- * We will not attempt to re-construct your database from a description or multi-step instructions. If setup is simply to execute a bash script or a docker command 👍. If it's more involved 👎.
+ * We will not re-construct your database from a description or multi-step instructions. If setup is simply to execute a bash script or a docker command 👍. If it's more involved 👎.

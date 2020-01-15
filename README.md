@@ -1,8 +1,9 @@
 # mySidewalk Inc Interview Assessment
 
 ## Submission Guidelines:
-* Of the roles linked to, choose the 1 that best aligns with your skillset and desired role at mySidewalk.
-* Prepare a program (source code, tests, and resources that will run on their own under the circumstances described in the problem and fulfill the informal requirements of the problem statement).
+* Of the roles linked to, choose the one that best aligns with your skillset and desired role at mySidewalk.
+* Read the prompt and prepare a submission that satisfies its requirements.
+* Include all source code, configuration, tests, assets, and documentation.
 * Archive (zip, 7z, gztar, etc.) your program and all supporting materials.
 * Email your submission to careers@mysidewalk.com, subject line: “Code Submission: [Insert Role]”.
 
@@ -13,12 +14,12 @@ Roles:
 
 ## Level of Effort Guidelines:
 * Each prompt is designed to take less than 2 hours to prepare a submission.
-* Our team fully embraces open source technologies and frameworks for a number of reasons, not the least of which is that you can solve problems faster with them. We highly recommend you use appropriate frameworks wherever possible to solve and deploy solutions to your selected problems.
-* Don't make the submission harder than it needs to be. Functionality, Readability, Runnability, and Tests/Analysis are the elements involved in score. Adding scope, creating an entire application, and otherwise goldplating the solution are unnecessary.
+* We embrace open source technologies and frameworks. Starting with a complete, documented, tested framework saves time and improves quality. We recommend you use appropriate frameworks to complete submissions for the same reason.
+* Don't make the submission harder than it needs to be. Functionality, Readability, Runnability, and Tests/Analysis are the elements involved in score. Adding scope, creating an entire application, and otherwise gold-plating the solution are unnecessary.
 * Assume any text or strings mentioned may contain unicode characters.
 
 ## Integrity Guidelines
-Software development at mySidewalk is a collaborative endeavor and engineers here often survey other examples to come up with the best solution. That said: if you derive any part of your solution from another author’s submission or receive help from another individual working through your solution, you need to:
+We develop software collaboratively and survey available examples. We understand and endorse this practice. That said, we want to see your individual capabilities. If you derive your submission from another author or receive assistance:
 * Disclose this with appropriate inline comments and documentation.
-* Improve significantly upon the work you derived from or the approach with which a colleague helped.
-* **CAUTION: It is trivial to determine that a submission has been copied from other submissions or plagiarized from publicly available source code. If you use the source code or approach of another engineer, disclose it appropriately or your submission will be disqualified.**
+* Improve upon the work you derived from or the approach with which a colleague helped.
+* **A cautionary note: It is trivial to determine that a submission is copied or plagiarized. If you use the source code or approach of another engineer, disclose it appropriately or you will be disqualified from the position.**

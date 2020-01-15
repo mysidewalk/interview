@@ -1,7 +1,10 @@
 # Data Engineer
 
 ## Prompt
-Prepare a csv table of the 90th percentile total response times (time it takes for a unit to arrive "On Scene" from the moment the call is "Received" at the 911 watch center) by month by Emergency Response District ("Battalion") for the last 12 months in San Francisco. Once the table is prepared, visualize the month over month 90th percentile response times by Emergency Response District appropriately. [Data Source Here](data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3).
+You will use records of calls for service from the San Francisco Fire Department. Limit your work to most recently available 12 months of data. Prepare a CSV table of the 90th percentile Response Times by month by "Battalion". Once prepared, visualize the monthly 90th percentile response times by "Battalion" appropriately.
+-  Response Times: time it takes for a unit to arrive "On Scene" from the moment the call is "Received" at the 911 watch center)
+- "Battalion": the column name used to refer to SF's Emergency Response District
+- [Data Source Here](data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3).
 
 ## Assessment Guidelines:
 * We will score 1 submission. Completing extra problems is not encouraged for the purposes of this assessment.
@@ -23,4 +26,4 @@ Prepare a csv table of the 90th percentile total response times (time it takes f
   * flat files
   * sqlite (or another self contained/embedded database) 
   * a completely scripted setup (docker recommended)
- * We will not attempt to re-construct your database from a description or multi-step instructions. If setup is simply to execute a bash script or a docker command 👍. If it's more involved 👎.
+ * We will not re-construct your database from a description or multi-step instructions. If setup is simply to execute a bash script or a docker command 👍. If it's more involved 👎.
