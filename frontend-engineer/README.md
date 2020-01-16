@@ -14,13 +14,13 @@ You will use the following geojson layers: ([1](kc-neighborhoods.json), [2](kc-t
   * Testing: does the solution contain tests verifying its functionality? Is the test coverage right? Are the tests a help or hindrance for theoretical refactoring and maintenance?
 * Scoring Functionality and Testing depends on the runnability of the submission.
 * The mySidewalk development team is familiar with:
-  * Languages: python, javascript, SQL, R, Sass
-  * Databases: postgres, mongodb, sqlite
-  * Operating Systems: coreos, linux, macos
-  * Virtualization Systems: docker (docker-machine and docker-compose preferred)
-* Quality of assessment may suffer for other submissions. You should make extra effort to provide instructions and write clearly in this case. We use macbook pros to assess all submissions. Windows specific submissions will make a good score difficult.
+  * Languages: Python, JavaScript, SQL, R, Sass
+  * Databases: PostgresSQL, MongoDB, SQLite
+  * Operating Systems: CoreOS, Linux, macOS
+  * Virtualization Systems: Docker (docker-machine and docker-compose preferred)
+* Quality of assessment may suffer for other submissions. You should make extra effort to provide instructions and write clearly in this case. We use MacBook Pros to assess all submissions. Windows specific submissions will make a good score difficult.
 * If your solution involves persistence use:
   * flat files
   * sqlite (or another self contained/embedded database) 
-  * a completely scripted setup (docker recommended)
+  * a completely scripted setup (Docker recommended)
 * We will not re-construct your database from a description or multi-step instructions. If setup is simply to execute a bash script or a docker command 👍. If it's more involved 👎.
