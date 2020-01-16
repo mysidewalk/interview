@@ -23,4 +23,4 @@ You will use the following geojson layers: ([1](kc-neighborhoods.json), [2](kc-t
   * flat files
   * sqlite (or another self contained/embedded database) 
   * a completely scripted setup (docker recommended)
- * We will not re-construct your database from a description or multi-step instructions. If setup is simply to execute a bash script or a docker command 👍. If it's more involved 👎.
+* We will not re-construct your database from a description or multi-step instructions. If setup is simply to execute a bash script or a docker command 👍. If it's more involved 👎.

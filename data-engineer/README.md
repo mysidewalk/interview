@@ -26,4 +26,4 @@ You will use records of calls for service from the San Francisco Fire Department
   * flat files
   * sqlite (or another self contained/embedded database) 
   * a completely scripted setup (docker recommended)
- * We will not re-construct your database from a description or multi-step instructions. If setup is simply to execute a bash script or a docker command 👍. If it's more involved 👎.
+* We will not re-construct your database from a description or multi-step instructions. If setup is simply to execute a bash script or a docker command 👍. If it's more involved 👎.
