@@ -24,6 +24,6 @@ You will use records of calls for service from the San Francisco Fire Department
 * Quality of assessment may suffer for other submissions. You should make extra effort to provide instructions and write clearly in this case. We use MacBook Pros to assess all submissions. Windows specific submissions will make a good score difficult.
 * If your solution involves persistence use:
   * flat files
-  * sqlite (or another self contained/embedded database) 
+  * SQLite (or another self contained/embedded database)
   * a completely scripted setup (Docker recommended)
 * We will not re-construct your database from a description or multi-step instructions. If setup is simply to execute a bash script or a docker command 👍. If it's more involved 👎.
