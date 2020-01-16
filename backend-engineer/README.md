@@ -1,13 +1,15 @@
 # Backend or Full-Stack Engineer
 
 ## Prompt
-You will use the [provided text file](example-list.txt) for this submission. It contains short strings on separate lines. Many of these strings have a number prefix, i.e. “2 Steaks”, “10 Chicken Wings”, “343GuiltySparks”. Prepare a program that accepts a file or path and creates or returns a file with the same short strings sorted. 
+You will use the [provided text file](example-list.txt) for this submission.
+It contains short strings on separate lines. Many of these strings have a number prefix, i.e. “2 Steaks”, “10 Chicken Wings”, “343GuiltySparks”.
+Prepare a program that accepts a file or path and creates or returns a file with the same short strings sorted. 
 Sort first by the numeric value of any leading number (2 < 10 < 343) and then alphabetically for the rest of the string.
 
 ## Assessment Guidelines:
 * We will score 1 submission. Completing extra problems is not encouraged for the purposes of this assessment.
 * The solution must be programmatic and driven by your included source code. Application driven solutions to this prompt are not appropriate. (For example Excel, Tableau, PowerBI, Dreamweaver, Flash)
-* Members of our engineering team will score submissions. They will be unaware of the author’s identity, resume, or background. They will have no access no information or documentation besides the submission.
+* Members of our engineering team will score submissions. They will be unaware of the author’s identity, resume, or background. They will have no access to information or documentation besides the submission.
 * Scoring consists of 4 considerations of equal weight:
   * Runnability/Deployment: was the assessor able to get the solution to run? were the steps to do so clear, concise, and convenient?
   * Functionality: does the solution solve the stated problem?

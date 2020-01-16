@@ -9,7 +9,7 @@ You will use records of calls for service from the San Francisco Fire Department
 ## Assessment Guidelines:
 * We will score 1 submission. Completing extra problems is not encouraged for the purposes of this assessment.
 * The solution must be programmatic and driven by your included source code. Application driven solutions to this prompt are not appropriate. (For example Excel, Tableau, PowerBI, Dreamweaver, Flash)
-* Members of our engineering team will score submissions. They will be unaware of the author’s identity, resume, or background. They will have no access no information or documentation besides the submission.
+* Members of our engineering team will score submissions. They will be unaware of the author’s identity, resume, or background. They will have no access to information or documentation besides the submission.
 * Scoring consists of 4 considerations of equal weight:
   * Runnability/Deployment: was the assessor able to get the solution to run? were the steps to do so clear, concise, and convenient?
   * Functionality: does the solution solve the stated problem?
