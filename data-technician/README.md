@@ -20,7 +20,7 @@ You will use records of calls for service from the San Francisco Fire Department
   * Databases: PostgresSQL, MongoDB, SQLite
   * Operating Systems: CoreOS, Linux, macOS
   * Virtualization Systems: Docker (docker-machine and docker-compose preferred)
-* Quality of assessment may suffer for other submissions. You should make extra effort to provide instructions and write in this case. We use MacBook Pros to assess all submissions. Windows specific submissions will make a good score difficult. Microsoft Access is a nonstarter on MacBook Pros - do not use it as a method of solving the prompt.
+* Quality of assessment may suffer for other submissions. You should make extra effort to provide instructions in this case. We use MacBook Pros to assess all submissions. Windows specific submissions will make a good score difficult. Microsoft Access is a nonstarter on MacBook Pros - do not use it as a method of solving the prompt.
 * If your solution involves persistence use:
   * flat files
   * SQLite (or another self contained/embedded database)
