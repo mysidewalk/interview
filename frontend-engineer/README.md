@@ -1,7 +1,7 @@
 # Frontend Engineer
 
 ## Prompt
-You will use the following geojson layers: ([1](kc-neighborhoods.json), [2](kc-tracts.json)). Appropriately visualize them together on a map.  Include an interactive chart of their commuter population attributes. Ensure the layout and design of the experience is device responsive and WCAG 2.0 AA compliant.
+Using the following GeoJSON layers: ([kc-neighborhoods.json](kc-neighborhoods.json), [kc-tracts.json](kc-tracts.json)), create a webpage to fetch the raw files and appropriately visualize them together on a map, along with an interactive chart of their commuter population attributes. We use [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/) and [Highcharts](https://www.highcharts.com/) for our map and chart visualizations, but feel free to use any libraries or APIs that you prefer. Do your best, within reason, to make the layout and design of the experience device responsive and WCAG 2.0 AA compliant.
 
 ## Assessment Guidelines:
 * We will score 1 submission. Completing extra problems is not encouraged for the purposes of this assessment.
