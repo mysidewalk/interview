@@ -1,4 +1,4 @@
-# Data Technician
+# Data Analyst
 
 ## Prompt
 You will use records of calls for service from the San Francisco Fire Department. Limit your work to the most recently available 12 months of data. Prepare a CSV table of the 90th percentile Response Times by month by "Battalion". Once prepared, write up a short (3-5 sentences or bullet points) summary of how you prepared this table. Next write up a short (3-5 sentences or bullet points) summary of how you would make this task trivial to repeat every day.
