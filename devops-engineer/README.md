@@ -13,4 +13,4 @@ Write a Dockerfile to create a docker image for the simple app contained in the 
   * Functionality: does the solution solve the stated problem?
   * Readability: is the solution's code and documentation stylistically, idiomatically, and structurally sound? Does its structure, naming, and commenting make it easy to read?
   * Best Practice: does the solution follow best practices?
-* Scoring Functionality and Testing depends on the runnability of the submission.
+* Scoring Functionality depends on the runnability of the submission.
