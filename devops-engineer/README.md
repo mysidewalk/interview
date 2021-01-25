@@ -4,7 +4,7 @@
 
 Write a Dockerfile to create a docker image for the simple app contained in the `app` folder. Once you've built the image, please answer the following prompts: 
 1. Run the container and verify that the app works. Briefly describe the process and the output.
-2. Is your solution ready to be used in a production environment? Why?
+2. Is your solution ready for use in a production environment? Why?
 
 ## Assessment Guidelines:
 * Members of our engineering team will score submissions. They will be unaware of the author’s identity, resume, or background. They will have no access to information or documentation besides the submission.
