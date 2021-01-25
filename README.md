@@ -12,6 +12,7 @@ Roles:
 * [Frontend Engineer](frontend-engineer/README.md)
 * [Data Engineer](data-engineer/README.md)
 * [Data Analyst](data-analyst/README.md)
+* [DevOps Engineer](devops-engineer/README.md)
 
 ## Level of Effort Guidelines:
 * Each prompt is designed to take less than 2 hours to prepare a submission.
