@@ -10,7 +10,7 @@ You will use records of calls for service from the San Francisco Fire Department
 * We will score 1 submission. Completing extra problems is not encouraged for the purposes of this assessment.
 * Application driven solutions to this prompt are acceptable (For example Excel, QGIS, Tableau, PowerBI, Dreamweaver, Flash). We prefer programmatic solutions (For example, Python, Javascript, R). Programmatic solutions are much more reproducible and easier to anonymize. They will generally score higher. If you submit a programmatic solution, include your source code. 
 * Members of our engineering team will score submissions. They will be unaware of the author’s identity, resume, or background. They will have no access to information or documentation besides the submission.
-* Scoring consists of 3 considerations of equal weight:
+* Scoring consists of 4 considerations of equal weight:
   * Concept: does the solution do the task described in the prompt?
   * Accuracy: does the solution provide accurate numbers?
   * Documentation: is documentation easy to read, free from errors, and clear?
