@@ -1,6 +1,8 @@
 . .config
 
-# Run the container with publish tag for given ports
+# Output the given ports for the server
 echo Server listening on port: $HOST_PORT
 echo Container exposed on port: $CONTAINER_PORT
+
+# Run the container with publish tag for given ports
 docker run -p $HOST_PORT:$CONTAINER_PORT $FLASK_CONTAINER:$VERSION 

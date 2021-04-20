@@ -1,8 +1,8 @@
 FROM python:3.8-slim-buster
 
-# Create a group and user to run our app
+# Create a group and non root user to run our app
 ARG APP_USER=appuser
-ARG CONTAINER_PORT
+
 RUN groupadd -r ${APP_USER} && useradd --no-log-init -r -g ${APP_USER} ${APP_USER}
 
 # set the FLASK_APP ENV to the given flask python script
