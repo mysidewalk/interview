@@ -1,2 +1,4 @@
 *.tmp
 *.log
+.DS_STORE
+__py*
