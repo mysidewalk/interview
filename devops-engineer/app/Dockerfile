@@ -5,10 +5,7 @@ ARG APP_USER=appuser
 
 RUN groupadd -r ${APP_USER} && useradd --no-log-init -r -g ${APP_USER} ${APP_USER}
 
-# set the FLASK_APP ENV to the given flask python script
-ENV FLASK_APP=server.py
-
-# switch to the /app dir where the flask app is located
+# switch to the /app dir to work in
 WORKDIR /app
 
 # Copy the files needed to make our app work 
