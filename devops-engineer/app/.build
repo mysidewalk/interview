@@ -1,0 +1,4 @@
+. .config
+
+#build the container image for the flask app 
+docker build -t $FLASK_CONTAINER:$VERSION --build-arg CONTAINER_PORT=$CONTAINER_PORT .
