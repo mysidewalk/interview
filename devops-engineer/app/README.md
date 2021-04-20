@@ -12,7 +12,7 @@
 
 These scripts are already set for you to run them. 
 
-## How to build and run your flask app
+## How to build and run the web server
 
 1. Run the build script:
     ```
@@ -65,7 +65,7 @@ Going forward we could set up liveness checks for the server and then use those 
 1. First I did not think the os-requirements were not needed as all dependencies needed like python3 and so on were available in this image `python:3.8-slim-buster` 
 
 
-2. I took the liberty of switching to using Waitress as flask would give me the following warning and I believed it did not meet production requirements: 
+2. I took the liberty of switching to using Waitress as flask would give me the following warning and I believed it did not meet production requirements from the start: 
 
 ```
     $ ./.run
