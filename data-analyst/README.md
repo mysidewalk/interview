@@ -16,7 +16,7 @@ You will use records of calls for service from the San Francisco Fire Department
   * Documentation: is documentation easy to read, free from errors, and clear?
   * Repeatability: does the provided summary meet the repeatability requirements?
 * The mySidewalk team is familiar with:
-  * Languages: Python, JavaScript, SQL, R, Sass
+  * Languages: Python, JavaScript, SQL, R
   * Databases: PostgresSQL, MongoDB, SQLite
   * Operating Systems: CoreOS, Linux, macOS
   * Virtualization Systems: Docker (docker-machine and docker-compose preferred)
