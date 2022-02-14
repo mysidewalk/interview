@@ -17,7 +17,7 @@ You will use records of calls for service from the San Francisco Fire Department
   * Analysis/Visualization: is the included data visualization appropriate, clear, and useful?
 * Scoring Functionality and Testing depends on the runnability of the submission.
 * The mySidewalk development team is familiar with:
-  * Languages: Python, JavaScript, SQL, R, Sass
+  * Languages: Python, JavaScript, SQL, R
   * Databases: PostgresSQL, MongoDB, SQLite
   * Operating Systems: CoreOS, Linux, macOS
   * Virtualization Systems: Docker (docker-machine and docker-compose preferred)
